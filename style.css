@@ -1,0 +1,666 @@
+*{
+	margin:0;
+	padding:0;
+	
+}
+
+.b{
+overflow-x: hidden;	
+}
+
+
+.header{
+	
+	min-height:100vh;
+	width:100%;
+	background-image: url('fantasy-landscape-wallpaper-4k.jpg');
+	background-position:center;
+	position:relative ;
+	background-size: cover;
+  
+  }
+  
+.Links{
+	flex:1;
+	text-align:center; 	
+	
+}
+
+.Links ul li{
+list-style: none;	
+display: inline-block;
+padding: 50px 20px;
+position: relative;
+left:250px;	
+}
+
+.Links ul li a{
+	color: black;
+	text-decoration: none;
+	font-family: 'Cinzel', serif;
+	font-size:150%;	
+	
+	
+}
+
+
+.Links ul li:after{	
+	content:'';
+	width: 0%;
+	height:2px;
+	background:black;
+	display: block;
+	margin: auto;
+	transition:0.3s;
+	
+}
+
+.Links ul li:hover:after{	
+	width: 90%;
+
+}
+
+.titleManhwa {
+	padding-top:10px;
+	width: 100%;
+	color: white;
+	position:absolute;
+	top:50% ; 
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align: center;
+	
+}
+
+.titleManhwa p{	
+font-size:20px;	
+text-align:justify;
+position:relative; 
+left:250px;
+}
+/*
+.shortcut{
+	font-size:20px;	
+text-align:justify;
+position:relative; 
+left:250px;
+
+list-style: none;
+	color: white;
+	text-decoration: none;
+	/*font-family: 'Cinzel', serif;
+	font-size:150%;	
+}
+*/
+
+.title{
+ border: 2px solid black;
+ border-radius:10px; 
+ width: 50%;
+ HEIGHT:35px;
+ color:#003300;
+ padding-top:10px;
+ border-color:black;
+position:relative;  
+ left:200px; 
+ 
+
+}
+/*  button efferct w3chools contoh 
+.press_effect {
+  padding:15px 25px;
+  font-size:24px;
+  text-align:center;
+  cursor:pointer;
+  outline:none;
+  color:#fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+smpai sini button effect*/
+
+
+/*pemisah Antara section */
+.barrier{
+	text-align:center;
+	width:100%;
+	margin:auto;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-color:black;
+	color:white;
+}
+
+.barrier2{
+	text-align:center;
+	width:100%;
+	margin:auto;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-color:black;
+	color:white;
+}
+
+.barrierEnd{
+
+	text-align:center;
+	width:100%;
+	margin:auto;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-color:#009933;
+	color:white;
+	
+}
+.Endpage{	
+	text-align:center;
+	width:100%;
+	margin:auto;
+	padding-top:50px;
+	padding-bottom:50px;
+	background-color:#00cc66 ;
+	color:white;	
+}
+
+
+/*history part*/
+.history{
+	
+	min-height:100vh;
+	width:100%;
+	background-image: url('4k-5k-wallpaper-fantasy.jpg');
+	background-position:center;
+	position:relative ;
+	background-size: cover;  		
+/*	background-color:#6666ff;*/
+	
+	text-align:center ;
+	padding-top: 4%;
+	
+	color:white;
+	font-size:large;
+}
+
+
+.history h1{
+	font-size:36px;
+	font-weight:600;
+	border: 2px solid black;
+	 border-radius:10px; 
+	 width: 20%;
+}
+
+.origin{
+		
+}
+
+.history div{
+	
+	text-align:justify;
+	position:relative; 
+	color:black;
+	left:600px;
+	font-family: 'Cinzel', serif;
+	font-size:100%;	
+	font-weight:bold;
+	text-shadow: 5px 5px 5x gray;
+}
+
+.comicType{
+	
+	background-color:#333300;
+	padding-bottom:50px;
+	width:100%;
+	margin:auto;
+	text-align:left;
+	padding-top:50px;
+	
+	
+	
+}
+
+.row{
+	margin-top: 0px;
+	display:flex;
+	justify-content:space-between;
+	flex-direction:column;
+	padding-left:150px;	
+}
+
+.colum{
+	
+	width:420px;
+	flex-basis:20%;	
+	border-radius:20px;	
+	margin-bottom:5%;
+	padding:20px 12px 20px 20px;
+	box-sizing:border-box;	
+	background:#336600;
+	color:#f2f2f2;	
+	
+	font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
+.mangaPic{
+	
+	border-radius:20px;
+	float:right;
+	padding-top:10px;
+	padding-bottom:20px;
+	padding-right:350px;
+	width:400px;
+	height:200px;
+	margin-bottom:23px;
+	
+}
+
+/*image effect */
+/*list page start  */
+.container {
+  position: relative;
+  width: 50%;
+  left:10%;
+  padding-top:10%;
+    
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height:60%;
+  border-radius:20px;	
+  
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 55%;
+  right: 100%;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  border-radius:20px;
+  height: 74%;
+  transition: .5s ease;
+
+}
+
+.container:hover .overlay {
+  width: 100%;
+  left: 55%;
+  border-radius:20px;
+  
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  text-align: justify;
+  transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+
+font-family: 'Roboto Mono', monospace;
+font-size:14px;
+
+}
+
+/*.listSection{
+background-image: url('fantasy-landscape-wallpaper-4k.jpg');
+  background-position:center;
+  position:relative ;
+  background-size: cover;
+}*/
+
+.bgroundPic{
+background:url('fantasy-landscape-wallpaper-4k.jpg'); 
+background-repeat: no-repeat; 
+background-attachment: fixed;
+background-size: cover;
+}
+
+
+.AskSuggest{
+background-image:url('4k-5k-wallpaper-fantasy.jpg');
+background-repeat: no-repeat; 
+background-attachment: fixed;
+background-size: cover;
+ padding-top:5%;
+ padding-bottom:10%;
+ padding-left:30%;
+ padding-right:0%;
+}
+
+.SuggestionBox{	
+	
+	width:300px;
+	height:20%;
+	border-radius:20px;
+	background:#f2f2f2;
+	padding-top:5%; 
+	padding-bottom:400px;
+	padding-left:5%;
+	padding-right:10%;
+ 
+}
+
+input[type=text]{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;  
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input[type=radio]{
+ 
+}
+
+.boxRadio{
+border:2px solid black;  	
+}
+
+.TA{
+	height:100px;
+	resize:none;
+	border-radius:10px;
+	border: 1px solid #ccc;	
+}
+
+
+
+input[type=reset] {
+  width: 30%;
+  background-color: #4da6ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #0066cc;
+}
+
+
+input[type=submit] {
+  width: 30%;
+  background-color: #4da6ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0066cc;
+}
+
+/*list page end */
+
+/*favourite*/
+
+.containerF {
+	
+  position: relative;
+  width: 50%;
+  left:10%;
+  padding-top:5%;
+    
+  
+}
+
+.imageF{
+  display: block;
+  width: auto;  
+   height: 60%;
+   border-radius:20px;
+   
+}
+
+.imageME{
+  display: block;
+  width: auto;  
+   height: 60%;
+   border-radius:20px;
+}
+
+.imageTBATE{
+  display: block;
+  width: auto;  
+   height: 60%;
+   border-radius:20px;
+}
+
+
+/*.imageF:hover{
+	background:url('tiktok/tiktok solo leveling.mp4');
+}*/
+
+.overlayF {
+   position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 100%;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  border-radius:20px;
+  height: 80%;
+  transition: .5s ease;
+}
+
+.containerF:hover .overlayF { 
+
+  width: 100%;
+  left: 50%;
+  border-radius:20px;
+}
+
+.textF {
+white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  text-align: justify;
+  transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+
+font-family: 'Roboto Mono', monospace;
+font-size:16px;
+
+}
+.textF h1{
+	text-align:center;
+	
+}
+
+
+.videoTiktok{	
+			
+	padding-top:10%;
+	padding-left:160px;
+	padding-right:160px;
+	padding-bottom:160px;	
+	
+}
+
+.vid th, td{	
+	border: 5px solid black;
+	background-color:#f2f2f2;   	
+}
+
+.bio{
+	font-family: 'Caveat', cursive;
+	font-size:50px;	
+	padding-top:2%;
+	padding-left:30%;
+	padding-bottom:5%;
+}
+
+.list5{
+	font-family: 'Caveat', cursive;
+	font-size:40px;	
+	
+	
+}
+
+
+
+
+.c{
+	font-family: 'Caveat', cursive;
+	font-size:50px;	
+	padding-top:2%;
+	padding-left:30%;
+	padding-bottom:10%;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius:5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.ContactDesc{
+
+/*background-color:#668cff;container */
+background-image:url('mountain.jpg');
+background-position:center;
+	position:relative ;
+	background-size: cover;
+	
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+padding-top:50px;
+padding-bottom:50px;
+
+}
+
+.dottedLine{	
+	border-top: 7px dotted  black;	
+	border-bottom:none;
+	width:60%;	
+}
+
+.dottedLine1{	
+	border-top: 7px dashed  black;	
+	border-bottom:none;
+	width:35%;	
+}
+.dottedLine2{	
+	border-top: 5px dashed  black;	
+	border-bottom:none;
+	width:54%;		
+}
+
+.dottedLine3{	
+	border-top: 5px dashed  black;	
+	border-bottom:none;
+	width:30%;		
+}
+
+.verticalLine{	
+	border-left: 2px solid white;	
+	width:4px;	
+	height:20px;
+}	
+
+/*div.langP{	
+white-space:nowrap;
+}*/
+
+.contactIntro{
+	width:30%;
+	padding-bottom:20px;
+	padding-left:40px;
+	
+	text-align:justify;
+	
+	font-family: 'Architects Daughter', cursive;
+	font-size:25px;
+	font-weight:bold;
+	
+	
+}
+
+.formQ{
+	padding-top:20px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:20px;
+
+	background-color:#ccd9ff;
+	border-radius:20px;
+	width:500px;
+}
+
+.profile{	
+	padding-top:20px;
+	padding-bottom:40px;
+	padding-left:10%;	
+	font-family: 'Indie Flower', cursive;
+	color:black;
+	background-color:#f2f2f2;
+}
+
+.arrange{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;	
+padding-left:40px;
+background-color:#f2f2f2;
+}
+
+
+.tsunaPic img{
+	border-radius:5px;	
+}
+
+.introHome p{
+	font-family: 'Architects Daughter', cursive;
+	font-family: 'Caveat',cursive;
+	font-size:200%;
+	color:#f2f2f2;
+}
+
+.info{
+
+
+}
+

@@ -1,0 +1,146 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+<title> Contact </title>
+<!-- link file css -->	
+	<link rel="stylesheet" href="style.css">
+
+<!-- link icon awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+
+<!-- link google font-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+
+<script language="JavaScript">
+// javascript starting here
+function validate_form()
+{
+	var valid=true;
+
+	if(document.ContactInfo.email.value=='' )
+	{
+    alert('Please fill in your email');
+    document.ContactInfo.email.focus();
+	valid=false;
+	}
+	
+	if(document.ContactInfo.State.selectedIndex==0)
+	{
+    alert('Please fill in your occupation');    
+	valid=false;
+	}
+}
+</script>
+
+	
+</head>
+
+<body>
+<section class="bgroundPic">
+
+<div class= "Links">
+ 
+  <ul>  
+<!--	<button class="press_effect"></button>  -->
+		<li><a href="Individual Asignment.html"> HOME </a></li> 
+		<li><a href="Biodata.html"> BIOGRAPHY </a> </li>
+		<li><a href="List.html"> LIST MANHWA </a> </li>
+		<li><a href="Favourite.html">FAVOURITE </a></li>
+		<li><a href="Contact.htm">CONTACT</a></li>						
+ </ul>
+ 
+</div>
+
+
+<div class="c"><h1>CONTACT</h1> <div class="dottedLine3"></div> </div>
+
+
+</section>
+
+<div class="info">
+<section class="ContactDesc">
+<br><br><br><br>
+
+
+
+<div class="contactIntro">
+
+<hr class="dottedLine"></hr>
+<br>
+<p>Let Start a Conversation</p>
+<br>
+<p> <i class="fa fa-envelope-o" aria-hidden="true"></i>  any question please email : 
+<br> amarkamal987@gmail.com  </p>
+<br>
+<p> <i class="fa fa-university" aria-hidden="true"></i> Studies at :
+<br> UiTM Campus Arau,<br> 02600 Arau, Perlis</p>
+<br>
+
+<div class="dottedLine"></div>
+</div>
+
+
+
+
+
+<div class="formQ" >
+
+<form name="ContactInfo" method="post" action="" onSubmit="return validate_form()">
+
+<br><label for="Name">Your Name</label> <br> <input name = "name" type = "text" placeholder="Your Name">
+
+<br><label for="Address">Your Address</label>  <br> <input name = "address" type = "text" placeholder="Your Address">
+
+<br><label for="Address">Your Ocupation </label><br>
+ <select name="State">
+    <option value="Recruiter" Selected>Recruiter</option>
+    <option value="Customer">Customer</option>
+    <option value="Student">Student</option>
+    <option value="Other">Other</option>
+  </select>
+
+<br><label for="email">Email</label><br>  <input name = "email" type = "text" placeholder="Your Emails">
+
+
+<br><label for="desc">Description </label><br>
+<textarea class="TA" name = "descriptionContact" row ="10" cols ="50" placeholder="please write the description here" >
+
+</textarea>
+
+<center> <input type = "submit" name = "Send" value = "Submit"></input> </center>
+
+</form>
+
+</div>
+
+
+</div>
+</section>
+
+<div class = "barrierEnd">
+<h1> Thank You for your times </h1>
+
+</div>
+
+<div class = "Endpage">
+<i class="fa fa-facebook-official" style="font-size:36px;"></i>  &nbsp &nbsp
+<i class="fa fa-instagram" style="font-size:36px;"></i>
+</div>
+</body>
+
+</html>
